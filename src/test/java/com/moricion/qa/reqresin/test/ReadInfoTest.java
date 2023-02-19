@@ -15,7 +15,7 @@ public class ReadInfoTest extends ReportingTestBase {
     testDetail.setTestName(testName);
     Step getAllUsersResponse = getAllUsers();
 
-    Assertion assertStatusCode = new Assertion("Was status code the expected", "HTTP/1.1 200 OK",getAllUsersResponse.getHttpStatus());
+    Assertion assertStatusCode = new Assertion("Was status code the expected", "200 OK",getAllUsersResponse.getHttpStatus());
     assertAndReport(getAllUsersResponse, assertStatusCode);
 
     assertAll();
