@@ -1,0 +1,64 @@
+{
+	"dataProviders": {
+		"loginDataN": {
+			"testCaseLoginN1": {
+				"name": "Wrong credentials",
+				"description": "Negative test case to validate that login",
+				"steps": [
+					{
+						"data": {
+							"userCredentials": "usersData/invalid"
+						},
+						"expected": {
+							"response": "loginResponses/HTTP_401"
+						}
+					}
+				]
+			},
+			"testCaseLoginN2": {
+				"name": "Wrong credentials",
+				"description": "Negative test case to validate that login",
+				"steps": [
+					{
+						"data": {
+							"userCredentials": "usersData/invalid"
+						},
+						"expected": {
+							"response": "loginResponses/HTTP_200"
+						}
+					}
+				]
+			}
+		},
+		"loginDataP": {
+			"testCaseLoginP1": {
+				"name": "Valid credentials",
+				"description": "Positive test case to validate that login works",
+				"steps": [
+					{
+						"data": {
+							"userCredentials": "usersData/qa_at"
+						},
+						"expected": {
+							"response": "loginResponses/HTTP_200"
+						}
+					}
+				]
+			},
+			"testCaseLoginP2": {
+				"name": "Valid credentials",
+				"description": "Positive test case to validate that login works",
+				"steps": [
+					{
+						"data": {
+							"userCredentials": "usersData/qa_at"
+						},
+						"expected": {
+							"response": "loginResponses/HTTP_401"
+						}
+					}
+				]
+			}
+		}
+	}
+}

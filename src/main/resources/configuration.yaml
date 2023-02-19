@@ -1,0 +1,5 @@
+platform: "WINDOWS"
+databaseHost: "url"
+env: "https://reqres.in"
+repository: "https://bitbucket.org/moricion/minerva/"
+bitbucketPipelineBuild: "LOCAL"
